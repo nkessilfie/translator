@@ -8,4 +8,5 @@ This repository contains a project coded along with text files
 
 This program uses the text file which contains data in dictionary format and reads it back as key, values and gives the translation for the required word
 
-language: python 3.8, editor: Pycharm 
+*language used: python 3.8
+*coded on: Pycharm 
