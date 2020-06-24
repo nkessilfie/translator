@@ -1,1 +1,0 @@
-{'hello' : 'how far' , 'whats up' : 'what dey go on' , 'bye' : 'we go crush', 'no' : 'naaa', 'yes' : 'ayd'}
