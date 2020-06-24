@@ -18,9 +18,19 @@ try:
                 print(key, ':', fre_dict[key])
 
     elif option == 2:
+        with open('engToSpan.txt', 'r') as spa:
+            spa_dict = eval(spa.read())
+
         print('English to Spanish')
+        spanish_word = input('Enter the english word: ')
+        for key in spa_dict.keys():
+            if spanish_word == key:
+                print(key, ':', spa_dict[key])
 
     elif option == 3:
+        with open('engToPidg.txt', 'r') as pidg:
+            pidg_dict = eval(pidg.read())
+
         print('English to Pidgin')
 
     else:
