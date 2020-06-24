@@ -1,4 +1,5 @@
 home = input('----Tap enter to begin translating to a language of your choice----')
+
 print("------------------------- Let's Begin ----------------------------- \n"
       "1. ---------English to French---------\n"
       "2. ---------English to Spanish--------\n"
@@ -13,9 +14,11 @@ try:
 
         print('English to French')
         french_word = input('Enter the english word: ')
+        french_word = french_word.lower()
         for key in fre_dict.keys():
             if french_word == key:
                 print(key, ':', fre_dict[key])
+
 
     elif option == 2:
         with open('engToSpan.txt', 'r') as spa:
@@ -23,6 +26,7 @@ try:
 
         print('English to Spanish')
         spanish_word = input('Enter the english word: ')
+        spanish_word = spanish_word.lower()
         for key in spa_dict.keys():
             if spanish_word == key:
                 print(key, ':', spa_dict[key])
@@ -36,5 +40,8 @@ try:
     else:
         print('Invalid input')
 
-except:
-    print('An error has occurred')
+except ValueError:
+    print('Try again')
+
+# except:
+#    print('An error has occurred')
