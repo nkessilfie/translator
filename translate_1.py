@@ -18,8 +18,8 @@ try:
         for key in fre_dict.keys():
             if french_word == key:
                 print(key, ':', fre_dict[key])
-            else:
-                raise ValueError('english word not found')
+            #else:
+            #    raise ValueError('english word not found')
 
 
     elif option == 2:
