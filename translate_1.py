@@ -18,8 +18,9 @@ try:
         for key in fre_dict.keys():
             if french_word == key:
                 print(key, ':', fre_dict[key])
-            #else:
-            #    raise ValueError('english word not found')
+            else:
+                print('word not in dictionary')
+                break
 
 
     elif option == 2:
@@ -33,7 +34,8 @@ try:
             if spanish_word == key:
                 print(key, ':', spa_dict[key])
             else:
-                raise ValueError('english word not found')
+                print('word not in dictionary')
+                break
 
     elif option == 3:
         with open('engToPidg.txt', 'r') as pidg:
@@ -46,7 +48,8 @@ try:
             if pidgin_word == key:
                 print(key, ':', pidg_dict[key])
             else:
-                raise ValueError('english word not found')
+                print('word not in dictionary')
+                break
 
     else:
         print('Invalid input')
