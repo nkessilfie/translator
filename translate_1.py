@@ -8,7 +8,14 @@ try:
     option = int(input('Choose your option: '))
 
     if option == 1:
+        with open('engToFre.txt', 'r') as fre:
+            fre_dict = eval(fre.read())
+
         print('English to French')
+        french_word = input('Enter the english word: ')
+        for key in fre_dict.keys():
+            if french_word == key:
+                print(key, ':', fre_dict[key])
 
     elif option == 2:
         print('English to Spanish')
