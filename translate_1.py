@@ -36,6 +36,11 @@ try:
             pidg_dict = eval(pidg.read())
 
         print('English to Pidgin')
+        pidgin_word = input('Enter the english word: ')
+        pidgin_word = pidgin_word.lower()
+        for key in pidg_dict.keys():
+            if pidgin_word == key:
+                print(key, ':', pidg_dict[key])
 
     else:
         print('Invalid input')
