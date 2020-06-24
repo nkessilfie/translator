@@ -1,0 +1,1 @@
+{'hello' : 'bonjour' , 'whats up' : 'comment tu fais' , 'bye' : 'ourevoir', 'no' : 'non', 'yes' : 'oui'}

@@ -1,0 +1,1 @@
+{'hello' : 'Ola' , 'whats up' : 'bonjog' , 'bye' : 'yalla', 'no' : 'non', 'yes' : 'Si'}
