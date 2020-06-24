@@ -18,6 +18,8 @@ try:
         for key in fre_dict.keys():
             if french_word == key:
                 print(key, ':', fre_dict[key])
+            else:
+                raise ValueError('english word not found')
 
 
     elif option == 2:
@@ -30,6 +32,8 @@ try:
         for key in spa_dict.keys():
             if spanish_word == key:
                 print(key, ':', spa_dict[key])
+            else:
+                raise ValueError('english word not found')
 
     elif option == 3:
         with open('engToPidg.txt', 'r') as pidg:
@@ -41,12 +45,14 @@ try:
         for key in pidg_dict.keys():
             if pidgin_word == key:
                 print(key, ':', pidg_dict[key])
+            else:
+                raise ValueError('english word not found')
 
     else:
         print('Invalid input')
 
 except ValueError:
-    print('Try again')
+    print('Unknown entry')
 
 # except:
 #    print('An error has occurred')
