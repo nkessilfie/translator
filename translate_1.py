@@ -19,6 +19,9 @@ try:
         for key in fre_dict.keys():
             if french_word == key:
                 print(key, ':', fre_dict[key])
+            elif french_word != key:
+                  print('not found in dict)
+                  break
             
             
     elif option == 2:
@@ -34,6 +37,9 @@ try:
         for key in spa_dict.keys():
             if spanish_word == key:
                 print(key, ':', spa_dict[key])
+            elif spanish_word != key:
+                  print('not found in dict)
+                  break
             
             
     elif option == 3:
@@ -48,6 +54,9 @@ try:
         for key in pidg_dict.keys():
             if pidgin_word == key:
                 print(key, ':', pidg_dict[key])
+            elif pidgini_word != key:
+                  print('not found in dict)
+                  break
 
     else:
         print('Invalid input')
