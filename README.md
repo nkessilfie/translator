@@ -20,3 +20,5 @@ How to execute Test
 4. Input 4 for options to fail options_test
 5. Input 'hello' in 'english word' to pass dictionary_key_test
 6. Input 'same' in 'english word' to fail dictionary_key_test
+7. Input 'hello' to obtain 'bonjour' to pass correspondence_test
+
