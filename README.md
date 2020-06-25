@@ -10,3 +10,6 @@ This program uses the text file which contains data in dictionary format and rea
 
 *language used: python 3.8
 *coded on: Pycharm 
+# code coverage:  
+(Number of lines of code executed by a testing algorithm/Total number of lines of code in a system component) * 100
+  
